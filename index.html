@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Receipt Insights Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --text: #1b1f24; --muted: #69707a; --accent: #0f766e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111418; --text: #e8ebee; --muted: #98a0aa; --accent: #2dd4bf; } }
+  body { background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, "Segoe UI", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 32px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<h1>Receipt Insights Privacy Policy</h1>
+<p class="muted">Effective October 9, 2026 (updated for Pro)</p>
+
+<p>Receipt Insights is a browser extension that turns your Costco receipts into a personal spending dashboard. It was built so that your purchase data stays on your own computer. This policy explains exactly what the extension accesses and what it does with it.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>Your receipts are stored only in your browser, on your device.</li>
+  <li>We do not have a server. Nothing about your receipts, purchases, or Costco account is sent to us or to anyone else.</li>
+  <li>Optional Pro features are sold through ExtensionPay and Stripe. To check whether you have Pro, the extension contacts ExtensionPay with a random ID. No receipt data is ever included.</li>
+  <li>We do not sell, share, or transfer your data, and we do not use it for advertising.</li>
+  <li>There are no analytics, tracking, or third-party scripts in the extension.</li>
+</ul>
+
+<h2>What the extension accesses</h2>
+<p><strong>Your Costco receipts and online orders.</strong> When you click "Sync receipts", the extension requests your in-warehouse, gas station, and online order history from Costco, using the costco.com session you are already signed in to. That data includes dates, warehouse locations, items, prices, discounts, taxes, totals, and order numbers. Costco's response can also include payment details such as card type, which the extension stores along with the rest of the receipt.</p>
+<p><strong>Your costco.com sign-in session.</strong> To make those requests, the extension reads the session token that costco.com itself stores in your browser, and sends it only to Costco's own servers. The extension never sees, asks for, or stores your Costco password, and it never sends your session token anywhere other than Costco.</p>
+
+<h2>Where your data is stored</h2>
+<p>Receipt data is saved in your browser's local extension storage (<code>chrome.storage.local</code>) on your device. It is not synced to your Google account or to any server. You can delete it at any time by removing the extension, which permanently deletes everything it stored.</p>
+
+<h2>Payments for Pro</h2>
+<p>Receipt Insights is free to use, with optional paid "Pro" features. Payments and free trials are handled by <a href="https://extensionpay.com">ExtensionPay</a>, with card payments processed by <a href="https://stripe.com">Stripe</a>. When the extension starts, ExtensionPay stores a random ID in your browser's extension storage and uses it to check whether you have paid or started a trial. If you buy Pro or start a trial, you give your email address (and, for purchases, your payment details) directly to ExtensionPay and Stripe, under their own privacy policies. We never see your card details, and your Costco receipts are never shared with either service.</p>
+
+<h2>How your data is used</h2>
+<p>Your data is used only to show you your dashboard (spending summaries, charts, the Executive membership estimate, item price history) and to create CSV files when you click "Export CSV". Exported files are saved where you choose and are under your control.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>We do not collect, transmit, or receive your Costco receipts, purchase history, or Costco sign-in.</li>
+  <li>We do not sell or transfer user data to third parties.</li>
+  <li>We do not use or transfer user data for purposes unrelated to the extension's purpose.</li>
+  <li>We do not use or transfer user data to determine creditworthiness or for lending purposes.</li>
+</ul>
+<p>The use of information received from Chrome APIs follows the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Access to www.costco.com:</strong> to request your receipts from Costco while you are signed in.</li>
+  <li><strong>Storage and unlimited storage:</strong> to keep your receipts on your device, since several years of receipts can exceed the default storage limit.</li>
+  <li><strong>Scripting:</strong> to connect to a costco.com tab that was already open before the extension was installed.</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>If a future version adds any feature that sends data off your device, such as optional price-drop alerts, it will be off by default, you will be asked before it is turned on, and this policy will be updated before that version is released.</p>
+
+<h2>Not affiliated with Costco</h2>
+<p>Receipt Insights is an independent product. It is not affiliated with, endorsed by, or sponsored by Costco Wholesale Corporation. "Costco" is a trademark of Costco Wholesale Corporation.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the extension: <a href="https://github.com/JoshSelby/receipt-insights-privacy/issues">open an issue on GitHub</a>.</p>
+</body>
+</html>
