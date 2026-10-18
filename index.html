@@ -16,7 +16,7 @@
 </head>
 <body>
 <h1>Receipt Insights Privacy Policy</h1>
-<p class="muted">Effective October 9, 2026 (updated for Pro)</p>
+<p class="muted">Effective October 9, 2026 (last updated October 2026)</p>
 
 <p>Receipt Insights is a browser extension that turns your Costco receipts into a personal spending dashboard. It was built so that your purchase data stays on your own computer. This policy explains exactly what the extension accesses and what it does with it.</p>
 
@@ -24,9 +24,10 @@
 <ul>
   <li>Your receipts are stored only in your browser, on your device.</li>
   <li>We do not have a server. Nothing about your receipts, purchases, or Costco account is sent to us or to anyone else.</li>
+  <li>The extension can send a small amount of anonymous usage statistics (see below). They never include anything from your receipts, and you can turn them off.</li>
   <li>Optional Pro features are sold through ExtensionPay and Stripe. To check whether you have Pro, the extension contacts ExtensionPay with a random ID. No receipt data is ever included.</li>
   <li>We do not sell, share, or transfer your data, and we do not use it for advertising.</li>
-  <li>There are no analytics, tracking, or third-party scripts in the extension.</li>
+  <li>There are no third-party tracking scripts in the extension. The only statistics are the anonymous ones described below.</li>
 </ul>
 
 <h2>What the extension accesses</h2>
@@ -38,6 +39,18 @@
 
 <h2>Payments for Pro</h2>
 <p>Receipt Insights is free to use, with optional paid "Pro" features. Payments and free trials are handled by <a href="https://extensionpay.com">ExtensionPay</a>, with card payments processed by <a href="https://stripe.com">Stripe</a>. When the extension starts, ExtensionPay stores a random ID in your browser's extension storage and uses it to check whether you have paid or started a trial. If you buy Pro or start a trial, you give your email address (and, for purchases, your payment details) directly to ExtensionPay and Stripe, under their own privacy policies. We never see your card details, and your Costco receipts are never shared with either service. Purchases appear on card statements as "ELO APPS", the business name Receipt Insights is sold under.</p>
+
+<h2>Anonymous usage statistics</h2>
+<p>To see where people get stuck, the extension sends short anonymous events to the developer using a Google Form (Google Forms receives them under its own privacy policy). Each event contains only:</p>
+<ul>
+  <li>a random install ID generated on your computer (not linked to your name, email, Google account, or Costco account);</li>
+  <li>the extension version and the number of days since you installed it;</li>
+  <li>the name of the event, such as installed, welcome page opened, sync started, sync succeeded, sync failed with a short error label, upgrade button clicked, or "price adjustments expiring" badge shown;</li>
+  <li>after a successful sync, a few coarse numbers: how many receipts there were, how many months they cover, trips per month, a monthly spending range (for example "250-500"), whether you have gas or online orders, and how many price adjustments were found.</li>
+</ul>
+<p>It never includes item names, prices, store locations, purchase dates, your Costco member number, name, email, or any other account details.</p>
+<p>When you uninstall the extension, your browser opens a short page on this developer's website. The page's link contains the random install ID, the version, days since install, and your receipt count, and the page reports that the extension was removed. If you choose to answer the optional "why did you leave?" question, your answer is sent the same way.</p>
+<p>To turn this off, untick "Send anonymous usage stats" at the bottom of the dashboard. Nothing is sent after that, and the uninstall page link then contains only the version. The extension also uses Chrome's alarms feature once a day to check, entirely on your device, whether any price adjustments you can still claim are about to expire; nothing is sent for that check.</p>
 
 <h2>How your data is used</h2>
 <p>Your data is used only to show you your dashboard (spending summaries, charts, the Executive membership estimate, item price history) and to create CSV files when you click "Export CSV". Exported files are saved where you choose and are under your control.</p>
@@ -55,6 +68,7 @@
 <ul>
   <li><strong>Access to www.costco.com:</strong> to request your receipts from Costco while you are signed in.</li>
   <li><strong>Storage and unlimited storage:</strong> to keep your receipts on your device, since several years of receipts can exceed the default storage limit.</li>
+  <li><strong>Alarms:</strong> to check once a day, on your device, whether any price adjustments are about to expire so the toolbar badge can show a count.</li>
   <li><strong>Scripting:</strong> to connect to a costco.com tab that was already open before the extension was installed.</li>
 </ul>
 
